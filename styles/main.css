@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 
 html {
@@ -11,7 +10,8 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* ================ Navbar ================= */
@@ -337,15 +337,11 @@ label {
   font-weight: 300;
 }
 
-label[for='name'] {
-  margin-top: 12px;
-}
-
 .payment-input {
   padding: 8px;
   margin: 10px 0;
   border: none;
-  border-bottom: 1px solid #808080;
+  border-bottom: 1.5px solid #808080;
 }
 
 .payment-input::placeholder {
@@ -456,4 +452,63 @@ label[for='name'] {
   font-weight: 900;
   padding: 12px 24px;
   cursor: pointer;
+}
+
+footer {
+  display: flex;
+}
+
+.footer-left {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.footer-menu-title {
+  font-size: 1rem;
+}
+
+.footer-menu-list {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-menu-list-item {
+  margin-bottom: 10px;
+  color: #808080;
+  cursor: pointer;
+}
+
+.footer-right {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-input {
+  padding: 5px;
+}
+
+.footer-button {
+  padding: 5px;
+  color: #f0f8ff;
+  background-color: #000000;
+}
+
+.footer-icons {
+  display: flex;
+}
+
+.footer-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.copyright {
+  font-size: 0.875rem;
+  opacity: 0.8;
 }
